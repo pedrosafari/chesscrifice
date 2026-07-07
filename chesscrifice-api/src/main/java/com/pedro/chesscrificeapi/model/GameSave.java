@@ -21,6 +21,8 @@ public class GameSave {
 
     private Integer sanity;
 
+    private Integer timeLeft;
+
     private Boolean gameFinished;
 
     private LocalDateTime updatedAt;
@@ -76,6 +78,14 @@ public class GameSave {
 
     public void setSanity(Integer sanity) {
         this.sanity = sanity;
+    }
+
+    public Integer getTimeLeft() {
+        return timeLeft;
+    }
+
+    public void setTimeLeft(Integer timeLeft) {
+        this.timeLeft = timeLeft;
     }
 
     public Boolean getGameFinished() {

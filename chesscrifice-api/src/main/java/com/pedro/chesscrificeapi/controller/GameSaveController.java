@@ -50,6 +50,10 @@ public class GameSaveController {
             save.setSanity(100);
         }
 
+        if (save.getTimeLeft() == null) {
+            save.setTimeLeft(300);
+        }
+
         if (save.getGameFinished() == null) {
             save.setGameFinished(false);
         }
@@ -67,6 +71,7 @@ public class GameSaveController {
         save.setCurrentFen(data.getCurrentFen());
         save.setCurrentMonster(data.getCurrentMonster());
         save.setSanity(data.getSanity());
+        save.setTimeLeft(data.getTimeLeft());
         save.setGameFinished(data.getGameFinished());
 
         return repository.save(save);

@@ -6,4 +6,5 @@ target
 *.log
 
 .DS_Store
-.env
+.envchesscrifice-api/engines/stockfish.exe
+chesscrifice-api/engines/stockfish.exe
