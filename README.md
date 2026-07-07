@@ -1,15 +1,12 @@
-# Stockfish
 
-O executável `stockfish.exe` não está versionado neste repositório porque ultrapassa o limite de tamanho permitido pelo GitHub para arquivos comuns.
+Para executar o jogo com a IA dos monstros, extraia o arquivo `stockfish.zip` nesta mesma pasta.
 
-Para executar a integração com o motor de xadrez, coloque o arquivo manualmente nesta pasta:
-
-chesscrifice-api/engines/stockfish.exe
-
-Estrutura esperada:
+Depois de extrair, a estrutura deve ficar assim:
 
 chesscrifice-api/
 └── engines/
     └── stockfish.exe
 
-Sem esse arquivo, o backend continuará funcionando, mas a jogada automática do monstro pelo Stockfish não será executada corretamente.
+O backend Spring Boot espera encontrar o executável exatamente neste caminho:
+
+chesscrifice-api/engines/stockfish.exe
